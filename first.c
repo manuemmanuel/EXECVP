@@ -18,17 +18,5 @@ for(i=1;i<10;i++)
 {
 printf("%d*%d\n",i,i);
 }
-return 0;}
-
-diropen.c
-#include<stdio.h>
-#include<unistd.h>
-#include<dirent.h>
-void main()
-{
-DIR *d;
-struct dirent *de;
-d=opendir(".");
-while(de=readdir(d))
-printf("%s\n",de->d_name);
+return 0;
 }
