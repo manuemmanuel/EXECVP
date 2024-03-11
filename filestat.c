@@ -12,9 +12,9 @@ printf("Enter Filename:");
 scanf("%s",path1);
 stat(path1,nfile);
 printf("User Id: %d\n",nfile->st_uid);
-printf("Blocksize:%ld\n",
+printf("Blocksize:%ld\n",nfile->st_blocks);
 printf("Last access time:%ld\n",nfile->st_atime);
-printf("Last modification:%ld\n",nfile->st_
+printf("Last modification:%ld\n",nfile->st_mtime);
 printf("Production mode:%d\n",nfile->st_mode);
 printf("Size of file:%ld\n",nfile->st_size);
 printf("Number of links:%ld\n",nfile->st_nlink);
